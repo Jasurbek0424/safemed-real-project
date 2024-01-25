@@ -1,0 +1,11 @@
+@media (max-width: 470px) {
+    .footerContent {
+        text-align: center;
+        justify-content: center !important;
+    }
+
+    .footerLogo {
+        display: flex;
+        justify-content: center;
+    }
+}

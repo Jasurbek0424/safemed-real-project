@@ -1,0 +1,51 @@
+@media (max-width: 767px) {
+    .safetyItem img {
+        height: 230px !important;
+        width: 150px !important;
+    }
+
+    .safetyItem {
+        height: 280px !important;
+    }
+
+    .medItem img {
+        width: 230px !important;
+    }
+}
+
+@media (max-width: 525px) {
+    .safetyContent {
+        flex-direction: column !important;
+        align-items: center;
+        text-align: center;
+    }
+
+    .safetyItem img {
+        width: 120px !important;
+        height: 180px !important;
+    }
+
+    .safetyItem {
+        height: 240px !important;
+    }
+
+
+    .safetyContent img {
+        margin: 0 auto;
+
+    }
+
+    .context {
+        margin: 15px auto;
+        text-align: justify !important;
+    }
+
+    .medItem img {
+        width: 180px !important;
+    }
+
+    .medItem {
+        height: 240px !important;
+    }
+
+}

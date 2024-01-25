@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@media (max-width: 1023px) {
+    .item {
+        max-width: 180px !important;
+    }
+
+    .item img {
+        max-width: 150px;
+    }
+
+    .topItem img {
+        max-width: 130px;
+    }
+
+    .itemList {
+        gap: 20px;
+    }
+
+    .filterContent {
+        width: 200px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .searchContent {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+    .filterContent {
+        width: 100% !important;
+    }
+
+    .filterItems {
+        flex-direction: row !important;
+    }
+
+    .categories {
+        max-width: 200px !important;
+        width: 100%;
+    }
+
+    .itemList {
+        gap: 20px !important;
+    }
+
+    .item img {
+        max-width: 150px;
+    }
+
+    .itemList {
+        justify-content: center !important;
+    }
+
+    .topItemsList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 441px) {
+    .item {
+        max-width: 260px !important;
+        width: 100%;
+    }
+
+    .itemList {
+        justify-content: center !important;
+    }
+
+    .filterItems {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+}

@@ -1,0 +1,157 @@
+.nav__link {
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.nav__link::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    background-color: #1A6EC1;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    transition: 0.3s;
+}
+
+.nav__link:hover::after {
+    width: 100%;
+}
+
+
+.navbar.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 5px gray;
+}
+
+.btn-search {
+    display: none;
+}
+
+
+/* Modalka start */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 25px;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+/* Modalka end*/
+
+
+@media (max-width:1023px) {
+
+    .btn-search {
+        display: block;
+    }
+
+    .search-btn-component {
+        display: none;
+    }
+
+    .menu {
+        position: absolute;
+        flex-direction: column;
+        justify-content: space-evenly;
+        top: 0;
+        right: 0;
+        padding: 25px 50px;
+        height: 100vh;
+        background-color: #003CA3;
+        transition: 0.5s;
+        transform: translateY(-100%);
+        z-index: 9999 !important;
+    }
+
+
+    #menu:checked~.menu {
+        transform: translateY(0);
+    }
+
+    .body::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 1000%;
+        background-color: #003ca37d;
+        z-index: 999;
+    }
+
+    .list {
+        flex-direction: column;
+    }
+
+    .msg::before {
+        display: none;
+    }
+
+    .msg {
+        padding: 0 10px;
+    }
+
+    .nav__link {
+        color: white;
+    }
+
+    .nav__link:hover {
+        color: white !important;
+    }
+
+    .nav__link:hover::after {
+        background-color: white;
+    }
+
+    .callCenter {
+        color: white;
+        flex-direction: column;
+    }
+
+    .callCenter:hover {
+        color: white;
+    }
+
+
+
+    .msgIcon {
+        color: white !important;
+        flex-direction: column !important;
+    }
+}
+
+@media (max-width:500px) {
+    .logo img {
+        max-width: 120px !important;
+    }
+}

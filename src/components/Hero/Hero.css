@@ -1,0 +1,17 @@
+@media (max-width: 767px) {
+    .hero {
+        flex-direction: column-reverse;
+    }
+
+    .heroRight {
+        padding: 20px !important;
+    }
+}
+
+@media (max-width: 475px) {
+    .hero form {
+        max-width: 340px !important;
+        width: 90% !important;
+    }
+
+}

@@ -1,0 +1,8 @@
+.carousel {
+    display: flex !important;
+    gap: 10px !important;
+}
+
+.item {
+    margin: 0 8px !important;
+}
